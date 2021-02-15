@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+jinja2 = "*"
 
 [dev-packages]
 pytest = "*"
 black = "==20.8b1"
+freezegun = "*"
 
 [requires]
 python_version = "3.6"
