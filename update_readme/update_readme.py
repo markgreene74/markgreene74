@@ -1,7 +1,9 @@
 from datetime import datetime
 from jinja2 import Template
+import os
 
 FILENAME = "README.md"
+README_PATH = os.path.join("../", FILENAME)
 TEMPLATE = "templates/README.md.jinja"
 DATETIME_FMT = "%Y-%m-%d %H:%M"
 
@@ -20,7 +22,7 @@ def write_readme():
     template = Template(readme_jinja)
     readme_rendered = template.render(last_updated=get_datetime())
 
-    with open(FILENAME, "w") as f:
+    with open(README_PATH, "w") as f:
         f.write(readme_rendered)
 
 
