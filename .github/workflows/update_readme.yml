@@ -32,11 +32,11 @@ jobs:
       - name: Run pytest
         working-directory: ${{ env.work-dir }}
         run: |
-          pipenv run pytest
+          pipenv run python -m pytest
       - name: Update README
         working-directory: ${{ env.work-dir }}
         run: |-
-          python build_readme.py
+          pipenv python update_readme.py
           cat ../README.md
       - name: Commit and push if changed
         run: |-
