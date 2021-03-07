@@ -29,14 +29,14 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade pipenv
           pipenv install --system --skip-lock
-      - name: Run pytest
-        working-directory: ${{ env.work-dir }}
-        run: |
-          pipenv run python -m pytest
+#      - name: Run pytest
+#        working-directory: ${{ env.work-dir }}
+#        run: |
+#          pipenv run python -m pytest
       - name: Update README
         working-directory: ${{ env.work-dir }}
         run: |-
-          pipenv python update_readme.py
+          python update_readme.py
           cat ../README.md
       - name: Commit and push if changed
         run: |-
