@@ -9,7 +9,7 @@ on:
   # run the workflow every 12 hours (twice a day, every day)
   workflow_dispatch:
   schedule:
-    - cron: '* 6,18 * * *'
+    - cron: '0 6 * * 1'
 
 jobs:
   build:
