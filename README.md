@@ -15,8 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 😄 Pronouns: he/him, but I don't mind they/them to encourage a more widespread usage
-- 🔭 I’m currently working on a lot of different SRE stuff, mostly around Machine Learning (kubeflow, kfserving) and Kafka
+- 😄 Pronouns: he/him
+- 🔭 I’m currently working on a number of personal projects with Python
 - 🌱 I’m currently learning Data Science at Goldsmiths, University of London
 
 ### `[2021:]`
@@ -29,6 +29,8 @@ Here are some ideas to get you started:
 <details><summary>(...)</summary>
 <p>
 <ul>
+    <li><a href="https://pydata.org/global2021/">PyData Global 2021 - October 28-30, 2021</a></li>
+    <li><a href="https://mlopsworld.com/">MLOps World - June 13-17, 2021</a></li>
     <li><a href="https://gophercon.eu/schedule/">GopherCon Europe - May 26-28, 2021</a></li>
     <li><a href="https://us.pycon.org/2021/">PyCon US 2021 - May 12-18, 2021</a></li>
     <li><a href="https://aws.amazon.com/events/aws-innovate/machine-learning/online/emea/agenda/">AWS Innovate - AI/ML Edition - 24 February, 2021</a></li>
@@ -50,4 +52,4 @@ Here are some ideas to get you started:
 </details>
 
 
-Last updated: 2021-11-28 12:54
+Last updated: 2021-11-28 13:00
