@@ -1,0 +1,6 @@
+"conference","start","end","online","fee","registered","attended","website"
+"Conference 1",01/01/2010,01/02/2010,False,True,True,True,"https://conference-one"
+"Conference 2",02/03/2020,03/03/2020,True,False,True,True,"https://conference-two"
+"Conference 4",05/09/2021,05/09/2021,True,True,True,False,"https://conference-four"
+"Conference 3",10/06/2020,15/06/2020,True,True,False,True,"https://conference-three"
+"Conference 5",12/04/2022,21/04/2022,True,True,True,True,"https://conference-five"

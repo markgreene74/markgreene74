@@ -1,17 +1,19 @@
 import pytest
+
 import os
 from shutil import copytree
-
-from freezegun import freeze_time
+from csv import DictReader
 from datetime import datetime
+from freezegun import freeze_time
 
 import update_readme as updt
 
 FILENAME = "README.md"
 README_PATH = os.path.join("../", FILENAME)
 TEMPLATE = "templates/README.md.jinja"
-TEMPLATE_DIR = "templates"
+FILENAME_CSV = "test/test_data.csv"
 DATETIME_FMT = "%Y-%m-%d %H:%M"
+TEMPLATE_DIR = "templates"
 
 
 def test_get_datetime():
@@ -20,8 +22,14 @@ def test_get_datetime():
         assert updt.get_datetime() == _mock_date
 
 
+def test_conference_year():
+    _mock_year = "2020"
+    result = updt.build_conf_list(FILENAME_CSV, _mock_year)
+    assert len(result) == 2
+
+
 def test_build_conf_list():
-    pass
+    assert len(updt.build_conf_list(FILENAME_CSV)) == 5
 
 
 def test_readme(tmp_path):

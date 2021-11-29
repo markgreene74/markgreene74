@@ -1,10 +1,12 @@
+import os
+from csv import DictReader
 from datetime import datetime
 from jinja2 import Template
-import os
 
 FILENAME = "README.md"
 README_PATH = os.path.join("../", FILENAME)
 TEMPLATE = "templates/README.md.jinja"
+FILENAME_CSV = "data/conferences.csv"
 DATETIME_FMT = "%Y-%m-%d %H:%M"
 
 
@@ -14,8 +16,22 @@ def get_datetime():
     return _today
 
 
-def build_conf_list():
-    pass
+def build_conf_list(csv_file=FILENAME_CSV, year=None):
+    """Parse the csv file, extract and process the data"""
+    current_year = datetime.now().year
+    all_conferences = list()
+
+    with open(csv_file) as f:
+        data = DictReader(f)
+        for row in data:
+            all_conferences.append(row)
+
+    if year:
+        result = [conf for conf in all_conferences if (year in conf["start"] or year in conf["end"])]
+    else:
+        result = all_conferences
+
+    return result
 
 
 def write_readme():
