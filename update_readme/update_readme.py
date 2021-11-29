@@ -27,7 +27,11 @@ def build_conf_list(csv_file=FILENAME_CSV, year=None):
             all_conferences.append(row)
 
     if year:
-        result = [conf for conf in all_conferences if (year in conf["start"] or year in conf["end"])]
+        result = [
+            conf
+            for conf in all_conferences
+            if (year in conf["start"] or year in conf["end"])
+        ]
     else:
         result = all_conferences
 
