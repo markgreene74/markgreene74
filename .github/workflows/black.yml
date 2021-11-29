@@ -7,7 +7,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      TASK_TRIGGER: .push
+      TASK_TRIGGER: .workflows_push_changes
 
     steps:
     - uses: actions/checkout@v2
