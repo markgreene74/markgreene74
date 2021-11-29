@@ -14,8 +14,12 @@ def get_datetime():
     return _today
 
 
+def build_conf_list():
+    pass
+
+
 def write_readme():
-    """Wtite the readme file from a jinja template"""
+    """Write the readme file from a jinja template"""
     with open(TEMPLATE) as f:
         readme_jinja = f.read()
 

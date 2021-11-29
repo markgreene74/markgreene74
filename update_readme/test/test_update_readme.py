@@ -20,6 +20,10 @@ def test_get_datetime():
         assert updt.get_datetime() == _mock_date
 
 
+def test_build_conf_list():
+    pass
+
+
 def test_readme(tmp_path):
     base_dir = os.path.join(tmp_path, "update_readme")
     os.mkdir(base_dir)
