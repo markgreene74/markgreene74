@@ -1,6 +1,6 @@
 import os
 from csv import DictReader
-from datetime import datetime
+from datetime import datetime as dt
 from jinja2 import Template
 
 FILENAME = "README.md"
@@ -12,36 +12,50 @@ DATETIME_FMT = "%Y-%m-%d %H:%M"
 
 def get_datetime():
     """Get datetime.now() in a specific format"""
-    _today = datetime.now().strftime(DATETIME_FMT)
+    _today = dt.now().strftime(DATETIME_FMT)
     return _today
 
 
 def build_conf_list(csv_file=FILENAME_CSV, year=None):
     """Parse the csv file, extract and process the data"""
-    current_year = datetime.now().year
-    all_conferences = list()
-
     with open(csv_file) as f:
         data = DictReader(f)
-        for row in data:
-            all_conferences.append(row)
+        all_conferences = [row for row in data]
+    # "conference","start","end","online","fee","registered","attended","website"
 
+    # process the data
+    for conf in all_conferences:
+        # replace "True"/"False" with a boolean
+        for k in ["online", "fee", "registered", "attended"]:
+            conf[k] = True if conf[k].lower() == "true" else False
+        # replace str with a proper datetime.date object
+        conf["start"] = dt.strptime(conf["start"], "%d/%m/%Y").date()
+        conf["end"] = dt.strptime(conf["end"], "%d/%m/%Y").date()
+        # add a key/value with the n of days
+        conf["days"] = (conf["end"] - conf["start"]).days + 1
+
+    # now we can order the conferences, for example by start date
+    all_conferences.sort(key=lambda x: x["start"])
+
+    # decide what to return based on if the arg `year` was provided
     if year:
-        result = [
-            conf
-            for conf in all_conferences
-            if (year in conf["start"] or year in conf["end"])
-        ]
+        y = int(year)
+        conf_new = [conf for conf in all_conferences if conf["start"].year >= y]
+        conf_old = [conf for conf in all_conferences if conf["start"].year < y]
     else:
-        result = all_conferences
+        conf_new = all_conferences
+        conf_old = []
 
-    return result
+    return conf_new, conf_old
 
 
 def write_readme():
     """Write the readme file from a jinja template"""
     with open(TEMPLATE) as f:
         readme_jinja = f.read()
+
+    current_year = dt.now().year
+    # conf_new, conf_old = build_conf_list(current_year)
 
     template = Template(readme_jinja)
     readme_rendered = template.render(last_updated=get_datetime())

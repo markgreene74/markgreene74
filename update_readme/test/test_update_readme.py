@@ -3,7 +3,7 @@ import pytest
 import os
 from shutil import copytree
 from csv import DictReader
-from datetime import datetime
+from datetime import datetime as dt
 from freezegun import freeze_time
 
 import update_readme as updt
@@ -23,13 +23,16 @@ def test_get_datetime():
 
 
 def test_conference_year():
-    _mock_year = "2020"
-    result = updt.build_conf_list(FILENAME_CSV, _mock_year)
-    assert len(result) == 2
+    _year = "2021"
+    _new, _old = updt.build_conf_list(FILENAME_CSV, _year)
+    assert len(_new) == 2
+    assert len(_old) == 3
 
 
 def test_build_conf_list():
-    assert len(updt.build_conf_list(FILENAME_CSV)) == 5
+    _new, _old = updt.build_conf_list(FILENAME_CSV)
+    assert len(_new) == 5
+    assert len(_old) == 0
 
 
 def test_readme(tmp_path):
@@ -39,7 +42,7 @@ def test_readme(tmp_path):
     os.chdir(base_dir)
 
     updt.write_readme()
-    _today = datetime.now().strftime(DATETIME_FMT)
+    _today = dt.now().strftime(DATETIME_FMT)
 
     with open(README_PATH) as temp_file:
         readme_file = temp_file.read()
