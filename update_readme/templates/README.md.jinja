@@ -25,7 +25,7 @@ Here are some ideas to get you started:
 <details><summary>(...)</summary>
 <p>
 <ul>
-{% for item in conf_new %}
+{% for item in conf_new|sort(attribute="end", reverse=True) %}
   {% if item.start %}
 <li><a href="{{item.website}}">{{item.conference}}</a> {{ item.start.strftime("%d") }}-{{ item.end.strftime("%d %B") }}, {{item.end.strftime("%Y")}}{% if item.online %} (Online){% endif -%}</li>
   {% else %}
@@ -40,7 +40,7 @@ Here are some ideas to get you started:
 <details><summary>(...)</summary>
 <p>
 <ul>
-{% for item in conf_old %}
+{% for item in conf_old|sort(attribute="end", reverse=True) %}
   {% if item.start %}
 <li><a href="{{item.website}}">{{item.conference}}</a> {{ item.start.strftime("%d") }}-{{ item.end.strftime("%d %B") }}, {{item.end.strftime("%Y")}}{% if item.online %} (Online){% endif -%}</li>
   {% else %}

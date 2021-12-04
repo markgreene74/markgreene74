@@ -29,7 +29,7 @@ def build_conf_list(csv_file=FILENAME_CSV, year=None):
         for k in ["online", "fee", "registered", "attended"]:
             conf[k] = True if conf[k].lower() == "true" else False
         # replace str with a proper datetime.date object,
-        # if it's a one day conference set start date to None
+        # if it's a one-day conference set start date to None
         conf["start"] = (
             None
             if conf["start"] == conf["end"]
@@ -38,9 +38,6 @@ def build_conf_list(csv_file=FILENAME_CSV, year=None):
         conf["end"] = dt.strptime(conf["end"], "%d/%m/%Y").date()
         # add a key/value with the n of days, set to 1 for one-day conferences
         conf["days"] = (conf["end"] - conf["start"]).days + 1 if conf["start"] else 1
-
-    # now we can order the conferences, for example by end date
-    all_conferences.sort(key=lambda x: x["end"])
 
     # decide what to return based on if the arg `year` was provided
     if year:
