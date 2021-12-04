@@ -1,7 +1,7 @@
 import pytest
 
 import os
-from shutil import copytree
+from shutil import copytree, copyfile
 from csv import DictReader
 from datetime import datetime as dt
 from freezegun import freeze_time
@@ -14,6 +14,7 @@ TEMPLATE = "templates/README.md.jinja"
 FILENAME_CSV = "test/test_data.csv"
 DATETIME_FMT = "%Y-%m-%d %H:%M"
 TEMPLATE_DIR = "templates"
+DATA_DIR = "data"
 
 
 def test_get_datetime():
@@ -38,7 +39,11 @@ def test_build_conf_list():
 def test_readme(tmp_path):
     base_dir = os.path.join(tmp_path, "update_readme")
     os.mkdir(base_dir)
+    # copy the template and data dir in the tmp path
     copytree(TEMPLATE_DIR, os.path.join(base_dir, TEMPLATE_DIR))
+    copytree(DATA_DIR, os.path.join(base_dir, DATA_DIR))
+    # replace the conferences file with the test file
+    copyfile(FILENAME_CSV, os.path.join(base_dir, DATA_DIR, "conferences.csv"))
     os.chdir(base_dir)
 
     updt.write_readme()
@@ -48,3 +53,4 @@ def test_readme(tmp_path):
         readme_file = temp_file.read()
 
     assert f"Last updated: {_today}" in readme_file
+    assert "Conference 5" in readme_file

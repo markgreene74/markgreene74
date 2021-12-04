@@ -28,20 +28,25 @@ def build_conf_list(csv_file=FILENAME_CSV, year=None):
         # replace "True"/"False" with a boolean
         for k in ["online", "fee", "registered", "attended"]:
             conf[k] = True if conf[k].lower() == "true" else False
-        # replace str with a proper datetime.date object
-        conf["start"] = dt.strptime(conf["start"], "%d/%m/%Y").date()
+        # replace str with a proper datetime.date object,
+        # if it's a one day conference set start date to None
+        conf["start"] = (
+            None
+            if conf["start"] == conf["end"]
+            else dt.strptime(conf["start"], "%d/%m/%Y").date()
+        )
         conf["end"] = dt.strptime(conf["end"], "%d/%m/%Y").date()
-        # add a key/value with the n of days
-        conf["days"] = (conf["end"] - conf["start"]).days + 1
+        # add a key/value with the n of days, set to 1 for one-day conferences
+        conf["days"] = (conf["end"] - conf["start"]).days + 1 if conf["start"] else 1
 
-    # now we can order the conferences, for example by start date
-    all_conferences.sort(key=lambda x: x["start"])
+    # now we can order the conferences, for example by end date
+    all_conferences.sort(key=lambda x: x["end"], reverse=False)
 
     # decide what to return based on if the arg `year` was provided
     if year:
         y = int(year)
-        conf_new = [conf for conf in all_conferences if conf["start"].year >= y]
-        conf_old = [conf for conf in all_conferences if conf["start"].year < y]
+        conf_new = [conf for conf in all_conferences if conf["end"].year >= y]
+        conf_old = [conf for conf in all_conferences if conf["end"].year < y]
     else:
         conf_new = all_conferences
         conf_old = []
@@ -55,10 +60,15 @@ def write_readme():
         readme_jinja = f.read()
 
     current_year = dt.now().year
-    # conf_new, conf_old = build_conf_list(current_year)
+    conf_new, conf_old = build_conf_list(year=current_year)
 
     template = Template(readme_jinja)
-    readme_rendered = template.render(last_updated=get_datetime())
+    readme_rendered = template.render(
+        last_updated=get_datetime(),
+        current_year=current_year,
+        conf_new=conf_new,
+        conf_old=conf_old,
+    )
 
     with open(README_PATH, "w") as f:
         f.write(readme_rendered)
