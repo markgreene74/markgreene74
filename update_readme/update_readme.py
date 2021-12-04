@@ -40,7 +40,7 @@ def build_conf_list(csv_file=FILENAME_CSV, year=None):
         conf["days"] = (conf["end"] - conf["start"]).days + 1 if conf["start"] else 1
 
     # now we can order the conferences, for example by end date
-    all_conferences.sort(key=lambda x: x["end"], reverse=False)
+    all_conferences.sort(key=lambda x: x["end"])
 
     # decide what to return based on if the arg `year` was provided
     if year:
