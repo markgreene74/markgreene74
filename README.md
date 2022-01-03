@@ -21,7 +21,16 @@ Here are some ideas to get you started:
 
 ### `[conference for conference in all_conferences]`
 
-#### `conference.start.year => 2021`
+#### `conference.start.year => 2022`
+<details><summary>(...)</summary>
+<p>
+<ul>
+
+</ul>
+</p>
+</details>
+
+#### `conference.start.year < 2022`
 <details><summary>(...)</summary>
 <p>
 <ul>
@@ -54,15 +63,6 @@ Here are some ideas to get you started:
 <li><a href="https://2021.pycascades.com/">PyCascades</a> 19-21 February, 2021 (Online)</li>
   
 
-</ul>
-</p>
-</details>
-
-#### `conference.start.year < 2021`
-<details><summary>(...)</summary>
-<p>
-<ul>
-
   
 <li><a href="https://pyjamas.live/schedule/">Pyjamas Conf 2020</a> 05 December, 2020 (Online)</li>
   
@@ -83,4 +83,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2021-12-27 06:06
+Last updated: 2022-01-03 06:04
