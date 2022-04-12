@@ -26,6 +26,14 @@ Here are some ideas to get you started:
 <p>
 <ul>
 
+  
+<li><a href="https://gophercon.eu/">GopherCon Europe 2022</a> 29-31 July, 2022 (Online)</li>
+  
+
+  
+<li><a href="https://pydata.org/london2022/">PyData London 2022</a> 17-19 June, 2022</li>
+  
+
 </ul>
 </p>
 </details>
@@ -83,4 +91,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2022-04-11 06:11
+Last updated: 2022-04-12 21:15
