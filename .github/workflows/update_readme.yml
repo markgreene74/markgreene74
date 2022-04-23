@@ -6,7 +6,7 @@ on:
   push:
     branches: [ main ]
 
-  # run the workflow every 12 hours (twice a day, every day)
+  # run the workflow every Monday at 6:00
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * 1'
@@ -36,6 +36,7 @@ jobs:
       - name: Update README
         working-directory: ${{ env.work-dir }}
         run: |-
+          python fetch_fo76_codes.py
           python update_readme.py
           cat ../README.md
       - name: Commit and push if changed

@@ -4,7 +4,7 @@ from datetime import datetime as dt
 from jinja2 import Template
 
 FILENAME = "README.md"
-README_PATH = os.path.join("../", FILENAME)
+FULL_PATH = os.path.join("../", FILENAME)
 TEMPLATE = "templates/README.md.jinja"
 FILENAME_CSV = "data/conferences.csv"
 DATETIME_FMT = "%Y-%m-%d %H:%M"
@@ -67,7 +67,7 @@ def write_readme():
         conf_old=conf_old,
     )
 
-    with open(README_PATH, "w") as f:
+    with open(FULL_PATH, "w") as f:
         f.write(readme_rendered)
 
 
