@@ -1,18 +1,24 @@
 import requests
-import json
 import os
+import re
 
-FILENAME = "fo_76"
-FULL_PATH = os.path.join("../", FILENAME)
-NC_URL = "https://nukacrypt.com/codes.json"
+FILENAME = "FO_76"
+FULL_PATH = os.path.join("./", FILENAME)
+NC_URL = "https://nukacrypt.com/"
 
-nc_content = requests.get(NC_URL).content
-j = json.loads(nc_content)
+nc_content = str(requests.get(NC_URL).content)
+silos = re.findall(r"\>(ALPHA|BRAVO|CHARLIE)\<", nc_content)
+codes = re.findall(r"\>(\d+)\<", nc_content)
 
-file_content = ""
+# >>> silos
+# ['ALPHA', 'BRAVO', 'CHARLIE']
+# >>> codes
+# ['61436701', '36758567', '79473176']
+# >>> list(zip(silos, codes))
+# [('ALPHA', '61436701'), ('BRAVO', '36758567'), ('CHARLIE', '79473176')]
 
-for silo in ["alpha", "bravo", "charlie"]:
-    file_content += f"|{silo}:{j[silo]}|\n"
+s_c_list = [f"{s}:{c}" for s, c in list(zip(silos, codes))]
+file_content = "\n".join(s_c_list)
 
 with open(FULL_PATH, "w") as f:
     f.write(file_content)
