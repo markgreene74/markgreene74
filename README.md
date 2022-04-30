@@ -34,6 +34,10 @@ Here are some ideas to get you started:
 <li><a href="https://pydata.org/london2022/">PyData London 2022</a> 17-19 June, 2022</li>
   
 
+  
+<li><a href="https://mlopsworld.com/">MLOps World 2022</a> 07-10 June, 2022 (Online)</li>
+  
+
 </ul>
 </p>
 </details>
@@ -91,4 +95,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2022-04-25 06:08
+Last updated: 2022-04-30 14:41
