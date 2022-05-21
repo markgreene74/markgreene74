@@ -6,10 +6,10 @@ on:
   push:
     branches: [ main ]
 
-  # run the workflow every Monday at 6:00
+  # run the workflow every Saturday at 00:10
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '10 0 * * 6'
 
 jobs:
   build:
