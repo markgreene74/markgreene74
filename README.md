@@ -15,11 +15,17 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 😄 Pronouns: he/him
-- 🔭 I’m currently working on a number of personal projects with Python
-- 🌱 I’m currently learning Data Science at Goldsmiths, University of London
+- 😄 Pronouns: he/him.
+- 🔭 I am a Python developer (backend) at Sky.
+- 🌱 In my spare time I like to work on personal projects (with Python, Jupyterlab, Pandas) around Data Science and ML.
+- 📚 I am currently studying Data Science at Goldsmiths, University of London and hope to complete my PGCert soon.
+- 📫 How to reach me:
+  - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
+  - [Twitter](https://twitter.com/markgreene74)
+  - `markgreene` or `gc` on a number of Slack workspaces ([PyBites](pybites.slack.com), [Test Podcast](testpodcast.slack.com), [Gophers](gophers.slack.com), [PyData Global](pydataglobal.slack.com), [PyData London](pydatalondon.slack.com))
 
-### `[conference for conference in all_conferences]`
+
+### 📢 `[conference for conference in all_conferences]`
 
 #### `conference.start.year => 2022`
 <details><summary>(...)</summary>
@@ -95,4 +101,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2022-06-18 02:21
+Last updated: 2022-06-22 12:18
