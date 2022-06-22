@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
   - [Twitter](https://twitter.com/markgreene74)
-  - `markgreene` or `gc` on a number of Slack workspaces ([PyBites](pybites.slack.com), [Test Podcast](testpodcast.slack.com), [Gophers](gophers.slack.com), [PyData Global](pydataglobal.slack.com), [PyData London](pydatalondon.slack.com))
+  - `markgreene` or `gc` on a number of Slack workspaces ([PyBites](https://pybites.slack.com), [Test Podcast](https://testpodcast.slack.com), [Gophers](https://gophers.slack.com), [PyData Global](https://pydataglobal.slack.com), [PyData London](https://pydatalondon.slack.com))
 
 
 ### 📢 `[conference for conference in all_conferences]`
@@ -101,4 +101,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2022-06-22 12:18
+Last updated: 2022-06-22 12:22
