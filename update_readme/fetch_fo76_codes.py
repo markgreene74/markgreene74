@@ -2,11 +2,12 @@ import requests
 import os
 import re
 
-FILENAME = "FO_76"
+FILENAME = "fo76"
 FULL_PATH = os.path.join("./", FILENAME)
 NC_URL = "https://nukacrypt.com/"
 
-nc_content = str(requests.get(NC_URL).content)
+ua = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+nc_content = str(requests.get(NC_URL, headers={"User-Agent": ua}).content)
 silos = re.findall(r"\>(ALPHA|BRAVO|CHARLIE)\<", nc_content)
 codes = re.findall(r"\>(\d+)\<", nc_content)
 
