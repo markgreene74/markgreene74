@@ -33,6 +33,14 @@ Here are some ideas to get you started:
 <ul>
 
   
+<li><a href="https://pydata.org/global2022/">PyData Global 2022</a> 01-03 December, 2022 (Online)</li>
+  
+
+  
+<li><a href="https://pyjamas.live/">Pyjamas Conf 2022</a> 26-27 November, 2022 (Online)</li>
+  
+
+  
 <li><a href="https://gophercon.eu/">GopherCon Europe 2022</a> 29-31 July, 2022 (Online)</li>
   
 
@@ -101,4 +109,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2022-11-20 16:02
+Last updated: 2022-11-20 17:01
