@@ -18,10 +18,11 @@ Here are some ideas to get you started:
 - 😄 Pronouns: he/him.
 - 🔭 I am a Python developer (backend) at Sky.
 - 🌱 In my spare time I like to work on personal projects (with Python, Jupyterlab, Pandas) around Data Science and ML.
-- 📚 I am currently studying Data Science at Goldsmiths, University of London and hope to complete my PGCert soon.
+- 📚 I have a PostGraduate Certificate (PGCert) in Data Science from Goldsmiths, University of London.
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
-  - [Twitter](https://twitter.com/markgreene74)
+  - ~[Twitter](https://twitter.com/markgreene74)~
+  - [Mastodon](https://fosstodon.org/@markgreene)
   - `markgreene` or `gc` on a number of Slack workspaces ([PyBites](https://pybites.slack.com), [Test Podcast](https://testpodcast.slack.com), [Gophers](https://gophers.slack.com), [PyData Global](https://pydataglobal.slack.com), [PyData London](https://pydatalondon.slack.com))
 
 
@@ -109,4 +110,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2023-02-19 02:53
+Last updated: 2023-02-25 22:02
