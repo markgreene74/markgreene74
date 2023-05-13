@@ -33,6 +33,10 @@ Here are some ideas to get you started:
 <p>
 <ul>
 
+  
+<li><a href="https://pydata.org/london2023/">PyData London 2023</a> 02-04 June, 2023</li>
+  
+
 </ul>
 </p>
 </details>
@@ -110,4 +114,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2023-05-07 02:39
+Last updated: 2023-05-13 23:02
