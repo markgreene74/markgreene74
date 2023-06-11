@@ -34,6 +34,10 @@ Here are some ideas to get you started:
 <ul>
 
   
+<li><a href="https://ep2023.europython.eu/">EuroPython 2023</a> 17-23 July, 2023 (Online)</li>
+  
+
+  
 <li><a href="https://pydata.org/london2023/">PyData London 2023</a> 02-04 June, 2023</li>
   
 
@@ -114,4 +118,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2023-06-11 03:04
+Last updated: 2023-06-11 15:27
