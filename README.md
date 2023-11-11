@@ -1,24 +1,11 @@
 ### Hi there 👋
 
-<!--
-**markgreene74/markgreene74** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
 - 😄 Pronouns: he/him.
 - 🔭 I am a Python developer (backend) at Sky.
+- 💻 I am on GitHub also as [giuseppecunsolo-sky](https://github.com/giuseppecunsolo-sky).
 - 🌱 In my spare time I like to work on personal projects (with Python, Jupyterlab, Pandas) around Data Science and ML.
 - 📚 I have a PostGraduate Certificate (PGCert) in Data Science from Goldsmiths, University of London.
+- 📖 I am studying for a master's degree (MSc) in Big Data Analytics at the University of Liverpool.
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
   - ~[Twitter](https://twitter.com/markgreene74)~
@@ -118,4 +105,4 @@ Here are some ideas to get you started:
 </p>
 </details>
 
-Last updated: 2023-11-05 02:28
+Last updated: 2023-11-11 19:12
