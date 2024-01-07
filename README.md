@@ -15,7 +15,16 @@
 
 ### 📢 `[conference for conference in all_conferences]`
 
-#### `conference.start.year => 2023`
+#### `conference.start.year => 2024`
+<details><summary>(...)</summary>
+<p>
+<ul>
+
+</ul>
+</p>
+</details>
+
+#### `conference.start.year < 2024`
 <details><summary>(...)</summary>
 <p>
 <ul>
@@ -27,15 +36,6 @@
   
 <li><a href="https://pydata.org/london2023/">PyData London 2023</a> 02-04 June, 2023</li>
   
-
-</ul>
-</p>
-</details>
-
-#### `conference.start.year < 2023`
-<details><summary>(...)</summary>
-<p>
-<ul>
 
   
 <li><a href="https://pydata.org/global2022/">PyData Global 2022</a> 01-03 December, 2022 (Online)</li>
@@ -105,4 +105,4 @@
 </p>
 </details>
 
-Last updated: 2023-12-31 02:31
+Last updated: 2024-01-07 02:34
