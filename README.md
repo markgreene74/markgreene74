@@ -34,6 +34,10 @@
   
 
   
+<li><a href="https://pydata.org/london2024/">PyData London 2024</a> 14-16 June, 2023</li>
+  
+
+  
 <li><a href="https://pydata.org/london2023/">PyData London 2023</a> 02-04 June, 2023</li>
   
 
@@ -105,4 +109,4 @@
 </p>
 </details>
 
-Last updated: 2024-04-21 02:29
+Last updated: 2024-04-24 22:40
