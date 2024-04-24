@@ -20,6 +20,10 @@
 <p>
 <ul>
 
+  
+<li><a href="https://pydata.org/london2024/">PyData London 2024</a> 14-16 June, 2024</li>
+  
+
 </ul>
 </p>
 </details>
@@ -31,10 +35,6 @@
 
   
 <li><a href="https://ep2023.europython.eu/">EuroPython 2023</a> 17-23 July, 2023 (Online)</li>
-  
-
-  
-<li><a href="https://pydata.org/london2024/">PyData London 2024</a> 14-16 June, 2023</li>
   
 
   
@@ -109,4 +109,4 @@
 </p>
 </details>
 
-Last updated: 2024-04-24 22:47
+Last updated: 2024-04-24 22:49
