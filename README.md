@@ -1,11 +1,10 @@
 ### Hi there 👋
 
-- 😄 Pronouns: he/him.
-- 🔭 I am a Software engineer at FairXchange.
+- 😄 Pronouns: he/him/his.
+- 🔭 I am a Senior Python engineer at Cognizant within the _Data Integration_ team.
 - 💻 I am on GitHub also as [giuseppecunsolo-sky](https://github.com/giuseppecunsolo-sky), but not very active on the other profile since I left Sky.
 - 🌱 In my spare time I like to work on personal projects (with Python, Jupyterlab, Pandas) around Data Science and ML.
 - 📚 I have a PostGraduate Certificate (PGCert) in Data Science from Goldsmiths, University of London.
-- 📖 I am studying for a master's degree (MSc) in Big Data Analytics at the University of Liverpool.
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
   - ~[Twitter](https://twitter.com/markgreene74)~
@@ -113,4 +112,4 @@
 </p>
 </details>
 
-Last updated: 2024-08-25 02:44
+Last updated: 2024-08-25 12:58
