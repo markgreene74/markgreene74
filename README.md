@@ -20,6 +20,10 @@
 <ul>
 
   
+<li><a href="https://www.rustnationuk.com/">Rust Nation 2025</a> 19-20 February, 2025</li>
+  
+
+  
 <li><a href="https://ep2024.europython.eu/">EuroPython 2024</a> 08-14 July, 2024 (Online)</li>
   
 
@@ -112,4 +116,4 @@
 </p>
 </details>
 
-Last updated: 2024-10-27 02:59
+Last updated: 2024-10-30 22:24
