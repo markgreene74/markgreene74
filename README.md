@@ -14,7 +14,7 @@
 
 ### 📢 `[conference for conference in all_conferences]`
 
-#### `conference.start.year => 2024`
+#### `conference.start.year => 2025`
 <details><summary>(...)</summary>
 <p>
 <ul>
@@ -22,6 +22,15 @@
   
 <li><a href="https://www.rustnationuk.com/">Rust Nation 2025</a> 19-20 February, 2025</li>
   
+
+</ul>
+</p>
+</details>
+
+#### `conference.start.year < 2025`
+<details><summary>(...)</summary>
+<p>
+<ul>
 
   
 <li><a href="https://pydata.org/global2024">PyData Global 2024</a> 03-05 December, 2024 (Online)</li>
@@ -34,15 +43,6 @@
   
 <li><a href="https://pydata.org/london2024/">PyData London 2024</a> 14-16 June, 2024</li>
   
-
-</ul>
-</p>
-</details>
-
-#### `conference.start.year < 2024`
-<details><summary>(...)</summary>
-<p>
-<ul>
 
   
 <li><a href="https://ep2023.europython.eu/">EuroPython 2023</a> 17-23 July, 2023 (Online)</li>
@@ -120,4 +120,4 @@
 </p>
 </details>
 
-Last updated: 2024-12-29 02:59
+Last updated: 2025-01-05 02:58
