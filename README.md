@@ -5,6 +5,7 @@
 - 💻 I am on GitHub also as [giuseppecunsolo-sky](https://github.com/giuseppecunsolo-sky), but not very active on the other profile since I left Sky.
 - 🌱 In my spare time I like to work on personal projects (with Python, Jupyterlab, Pandas) around Data Science and ML.
 - 📚 I have a PostGraduate Certificate (PGCert) in Data Science from Goldsmiths, University of London.
+- 📖 I am studying for a master's degree (MSc) in [Data Science at the University of St Andrews](https://www.st-andrews.ac.uk/study/online/data-science/).
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
   - ~[Twitter](https://twitter.com/markgreene74)~
@@ -124,4 +125,4 @@
 </p>
 </details>
 
-Last updated: 2025-01-12 03:01
+Last updated: 2025-01-13 20:42
