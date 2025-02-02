@@ -8,7 +8,7 @@
 - 📖 I am studying for a master's degree (MSc) in [Data Science at the University of St Andrews](https://www.st-andrews.ac.uk/study/online/data-science/).
 - 📫 How to reach me:
   - [LinkedIn](https://uk.linkedin.com/in/giuseppecunsolo)
-  - ~[Twitter](https://twitter.com/markgreene74)~
+  - [Bluesky](https://bsky.app/profile/markgreene74.bsky.social)
   - [Mastodon](https://fosstodon.org/@markgreene)
   - `markgreene` or `gc` on a number of Slack workspaces ([PyData Global](https://pydataglobal.slack.com), [PyData London](https://pydatalondon.slack.com), [Gophers](https://gophers.slack.com))
 
@@ -125,4 +125,4 @@
 </p>
 </details>
 
-Last updated: 2025-02-02 02:51
+Last updated: 2025-02-02 15:07
