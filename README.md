@@ -15,7 +15,16 @@
 
 ### 📢 `[conference for conference in all_conferences]`
 
-#### `conference.start.year => 2025`
+#### `conference.start.year => 2026`
+<details><summary>(...)</summary>
+<p>
+<ul>
+
+</ul>
+</p>
+</details>
+
+#### `conference.start.year < 2026`
 <details><summary>(...)</summary>
 <p>
 <ul>
@@ -35,15 +44,6 @@
   
 <li><a href="https://www.rustnationuk.com/">Rust Nation 2025</a> 19-20 February, 2025</li>
   
-
-</ul>
-</p>
-</details>
-
-#### `conference.start.year < 2025`
-<details><summary>(...)</summary>
-<p>
-<ul>
 
   
 <li><a href="https://pydata.org/global2024">PyData Global 2024</a> 03-05 December, 2024 (Online)</li>
@@ -133,4 +133,4 @@
 </p>
 </details>
 
-Last updated: 2025-12-28 03:52
+Last updated: 2026-01-04 03:56
