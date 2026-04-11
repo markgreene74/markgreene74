@@ -18,11 +18,11 @@ jobs:
       work-dir: ./update_readme
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.14'
       - name: Install dependencies
         working-directory: ${{ env.work-dir }}
         run: |
@@ -30,7 +30,6 @@ jobs:
       - name: Update README
         working-directory: ${{ env.work-dir }}
         run: |-
-          python fetch_fo76_codes.py
           python update_readme.py
           cat ../README.md
       - name: Commit and push if changed
