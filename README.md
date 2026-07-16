@@ -20,6 +20,10 @@
 <ul>
 
   
+<li><a href="https://ep2026.europython.eu">EuroPython 2026</a> 15-17 July, 2026 (Online)</li>
+  
+
+  
 <li><a href="https://pydata.org/london2026/">PyData London 2026</a> 05-07 June, 2026</li>
   
 
@@ -136,4 +140,4 @@
 </p>
 </details>
 
-Last updated: 2026-07-12 05:35
+Last updated: 2026-07-16 13:03
